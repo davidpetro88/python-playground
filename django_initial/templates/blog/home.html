@@ -1,24 +1,17 @@
-{% block title %} David's Blog {% endblock %}
-{{ all_categories    }}
+{% extends "blog/layout.html" %}
 
-{% for category in categories %}
-    <li> {{ category }}</li>
-{% endfor %}
+{% block title %} {{ name }}'s Blog {% endblock %}
 
-{#{% extends "blog/layout.html" %}#}
-{##}
-{#{% block title %} David's Blog {% endblock %}#}
-{##}
-{#{% block content %}#}
-{#<section>#}
-{#    {% for post in posts %}#}
-{#    <article>#}
-{#        <h2>{{ post.name }} ({{ post.category.name }})</h2>#}
-{#        <p>#}
-{#            {{post.content}}#}
-{#        </p>#}
-{#    </article>#}
-{#    <hr>#}
-{#    {% endfor %}#}
-{#</section>#}
-{#{% endblock %}#}
+{% block content %}
+<section>
+    {% for post in posts %}
+    <article>
+        <h2>{{ post.name }} ({{ post.category.name }})</h2>
+        <p>
+            {{post.content}}
+        </p>
+    </article>
+    <hr>
+    {% endfor %}
+</section>
+{% endblock %}
