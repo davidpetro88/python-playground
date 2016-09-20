@@ -7,5 +7,6 @@ print("Value x in class Car - " + Car.x)
 print("Value x in variable car - " + car.x)
 print("Call function drive - " + car.drive())
 car.hello('teste')
-
 car.show();
+print(car.__class__)
+print(type(car))

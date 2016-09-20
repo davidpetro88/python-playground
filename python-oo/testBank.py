@@ -1,0 +1,13 @@
+from bank import Bank1Account, Bank2Account
+davidAccount = Bank1Account(3786)
+davidAccount.deposit(1000.00)
+davidAccount.withdraw(250.00)
+print("David Account Bank1 Total $ " + str(davidAccount.get_total()))
+print(davidAccount.__class__)
+print(type(davidAccount))
+davidAccount2 =  Bank2Account(12321321,123)
+print(davidAccount2.__class__)
+print(type(davidAccount2))
+davidAccount2.deposit(2000.00)
+davidAccount2.withdraw(350.00)
+print("David Account Bank2 Total $ " + str(davidAccount2.get_total()))
