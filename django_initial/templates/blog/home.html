@@ -1,0 +1,24 @@
+{% block title %} David's Blog {% endblock %}
+{{ all_categories    }}
+
+{% for category in categories %}
+    <li> {{ category }}</li>
+{% endfor %}
+
+{#{% extends "blog/layout.html" %}#}
+{##}
+{#{% block title %} David's Blog {% endblock %}#}
+{##}
+{#{% block content %}#}
+{#<section>#}
+{#    {% for post in posts %}#}
+{#    <article>#}
+{#        <h2>{{ post.name }} ({{ post.category.name }})</h2>#}
+{#        <p>#}
+{#            {{post.content}}#}
+{#        </p>#}
+{#    </article>#}
+{#    <hr>#}
+{#    {% endfor %}#}
+{#</section>#}
+{#{% endblock %}#}
