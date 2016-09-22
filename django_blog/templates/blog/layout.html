@@ -7,8 +7,13 @@
           integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 </head>
 <body>
-<h1>Blog - {{ name }}</h1>
-
+<h1>Blog - {{ name }} </h1>
+{% load gravatar %}
+{% if request.user.is_authenticated %}
+<p>
+  Username: {{ request.user.email }} <img src="{% gravatar_url request.user.email 25 %}">
+</p>
+{% endif %}
 <div class="container">
     <div class="col-md-3">
         <aside class="row">
