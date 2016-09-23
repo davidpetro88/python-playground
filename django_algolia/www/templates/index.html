@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>My Posts</h1>
+
+Search: <input type="text" id="search">
+
+{% for post in posts %}
+    <h3>{{ post.title }}</h3>
+    <p>{{ post.content }}</p>
+{% endfor %}
+
+
+</body>
+</html>
