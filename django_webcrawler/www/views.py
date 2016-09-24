@@ -3,11 +3,9 @@ from www.webcrowler import WebCrowlwer
 
 
 def index(request):
-    # webCrowler = WebCrowlwer()
+    web_crowler = WebCrowlwer()
     context = {
         'title': 'WebCrowler Test',
-        'crowler': WebCrowlwer.getContent
+        'webCrowler': web_crowler.get_content()
     }
     return render(request, 'index.html', context)
-
-

@@ -1,10 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>{{ title }}</title>
-</head>
-<body>
-
-</body>
-</html>
+{% extends 'bootstrap.html' %}
+{% load bootstrap3 %}
+{% block bootstrap3_content %}
+    {% block content %}
+    <div class="container">
+        <div class="row1">
+        <h1>{{ title }}</h1>
+        {% for post in webCrowler %}
+            <div class="row">
+                <h3>{{ post.header }}</h3>
+                <p>{{ post.content }}</p>
+                <p>{{ post.moretag }}</p>
+            </div>
+        {% endfor %}
+        </div>
+    </div>
+    {% endblock %}
+{% endblock %}
