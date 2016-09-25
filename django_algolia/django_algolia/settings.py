@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.algoliasearch',
     'autofixture',
     'www',
 ]
@@ -53,7 +54,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'django_algolia.urls'
 
-TEMPLATES = [
+ATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [],
@@ -120,3 +121,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
+
+ALGOLIA = {
+    'APPLICATION_ID': 'YOUR_APPLICATION_ID',
+    'API_KEY': 'YOUR_API_KEY'
+}
