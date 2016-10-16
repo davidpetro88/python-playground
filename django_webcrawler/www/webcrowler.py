@@ -20,9 +20,9 @@ class WebCrowlwer(object):
         return content
 
     def get_content_v2(self):
-        return list(map((lambda x: self.test2(x)), self.get_html().findAll(attrs={'class': 'genaral-post-item'})))
+        return list(map((lambda x: self.body_html(x)), self.get_html().findAll(attrs={'class': 'genaral-post-item'})))
 
-    def test2(self, html_general_post):
+    def body_html(self, html_general_post):
         return {'header': html_general_post.find(attrs={'class': 'genpost-entry-header','class': 'genpost-entry-title'}).text,
                 'content': html_general_post.find(attrs={'class': 'genpost-entry-content'}).p.text,
                 'moretag': html_general_post.find(attrs={'class': 'genpost-entry-content'}).a['href']}
