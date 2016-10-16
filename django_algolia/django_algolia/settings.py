@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.10/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '1l9gt(gauc-*6qrpm4k0_u@xt58z27bq=m++2%4sqkf$d((16('
+SECRET_KEY = 'j-n7p&z4q$jcctc6117h4#2e#61&z&b=m6&7=k4(gz0c)dzst0'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -54,7 +54,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'django_algolia.urls'
 
-ATES = [
+TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [],
