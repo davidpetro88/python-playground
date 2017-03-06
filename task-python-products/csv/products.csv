@@ -1,0 +1,44 @@
+code,piece,description,quantity,price
+1,vestuario,camisa polo marca propria P,100,32.00
+2,vestuario,camisa polo marca propria M,150,32.00
+3,vestuario,camisa polo marca propria G,130,32.00
+4,vestuario,camisa polo marca propria GG,130,32.00
+5,vestuario,camisa polo P,33,43.00
+6,vestuario,camisa polo M,83,43.00
+7,vestuario,camisa polo G,63,43.00
+8,vestuario,camisa polo GG,93,43.00
+9,vestuario,camisa polo tommy P,20,85.00
+10,vestuario,camisa polo tommy M ,70,85.00
+11,vestuario,camisa polo tommy G,30,85.00
+12,vestuario,camisa polo tommy GG,40,85.00
+13,vestuario,camisa polo lacoste P,20,99.00
+14,vestuario,camisa polo lacoste M,30,99.00
+15,vestuario,camisa polo lacoste G,60,99.00
+16,vestuario,camisa polo lacoste GG,12,99.00
+17,vestuario,camisa polo beagle P,12,87.00
+18,vestuario,camisa polo beagle M,66,87.00
+19,vestuario,camisa polo beagle G,70,87.00
+20,vestuario,camisa polo beagle GG,32,87.00
+22,vestuario,calça social P,33,96.50
+23,vestuario,calça social M,63,96.50
+24,vestuario,calça social G,54,96.50
+25,vestuario,calça social GG,19,96.50
+26,vestuario,camisa social P,6,56.00
+27,vestuario,camisa social M,56,56.00
+28,vestuario,camisa social G,30,56.00
+29,vestuario,camisa social GG,20,56.00
+30,vestuario,gravata,300,16.00
+31,vestuario,meia,400,16.00
+32,vestuario,boina,100,60.00
+33,vestuario,chapeu,89,56.00
+34,vestuario,boina feminina,90,56.00
+35,vestuario,chapeu feminino,89,76.00
+36,vestuario,bermuda tommy P,20,36.00
+37,vestuario,bermuda tommy M,40,36.00
+38,vestuario,bermuda tommy G,10,36.00
+39,vestuario,bermuda tommy GG,12,36.00
+40,vestuario,short P,29,46.00
+41,vestuario,short M,39,46.00
+42,vestuario,short G,20,46.00
+43,vestuario,short GG,30,46.00
+44,vestuario,relogio apple,10,4600.00
