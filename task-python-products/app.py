@@ -5,6 +5,7 @@ import pandas as pd
 print("Example Load Files Using Pandas")
 print("\n")
 df = pd.read_csv('csv/products.csv')
+# df = pd.read_csv('csv/outputProduct.csv')
 print("Show Columns")
 print(df.columns)
 print("\n")
